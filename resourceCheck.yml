@@ -15,6 +15,6 @@
 #     ignore_errors: yes
  
 # Memory Size check
-#   - name: Check "free -m" as Memory SIZE
-#     shell: "free -m"
-#     ignore_errors: yes
+   - name: Check "free -m" as Memory SIZE
+     shell: "free -m"
+     ignore_errors: yes
