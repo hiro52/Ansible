@@ -6,15 +6,15 @@
  
 # vmstat check
    - name: Check "vmstat -t 1 10" as SERVER RESOUCE
-     shell: "vmstat 1 10 | while read line; do  echo  `date` $line  ; done >> /Stats2.txt"
+     shell: "vmstat 1 10 | while read line; do  echo  `date` $line  ; done >> /Stats.txt"
      ignore_errors: yes
  
 # Disk Size check
    - name: Check "df -h" as DISK SIZE
-     shell: "df -h >> /Disk2.txt"
+     shell: "df -h >> /Disk.txt"
      ignore_errors: yes
  
 # Memory Size check
    - name: Check "free -m" as Memory SIZE
-     shell: "free -m >> /Mem2.txt"
+     shell: "free -m >> /Mem.txt"
      ignore_errors: yes
