@@ -5,14 +5,14 @@
   tasks:
  
 # vmstat check
-#   - name: Check "vmstat -t 1 10" as SERVER RESOUCE
-#     shell: "vmstat 1 10 | while read line; do  echo  `date` $line  ; done"
-#     ignore_errors: yes
+   - name: Check "vmstat -t 1 10" as SERVER RESOUCE
+     shell: "vmstat 1 10 | while read line; do  echo  `date` $line  ; done"
+     ignore_errors: yes
  
 # Disk Size check
-#   - name: Check "df -h" as DISK SIZE
-#     shell: "df -h"
-#     ignore_errors: yes
+   - name: Check "df -h" as DISK SIZE
+     shell: "df -h"
+     ignore_errors: yes
  
 # Memory Size check
    - name: Check "free -m" as Memory SIZE
